@@ -11,7 +11,9 @@ class Work implements Runnable {
 				wait();
 			}
 			if(i==6 && name.equals("Vijay")) {
-				notify();
+				notifyAll();
+			}
+			if(i==2 && name.equals("Lokesh")) {
 				wait();
 			}
 			Thread.sleep(1000);
