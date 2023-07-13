@@ -16,7 +16,7 @@ public class LinkedListDemo {
 	ll.addFirst(11);
 	ll.addLast(22);
 	System.out.println(ll);
-	System.out.println(" using index "+ll.get(1));
+		System.out.println(" using index "+ll.get(1));
 	System.out.println("First element "+ll.getFirst());
 	System.out.println("last element "+ll.getLast());
 	System.out.println(ll);
