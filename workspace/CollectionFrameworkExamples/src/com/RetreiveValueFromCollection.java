@@ -34,15 +34,15 @@ public class RetreiveValueFromCollection {
 		Set ss= new HashSet();
 		ss.add(10); ss.add(20);ss.add("Ravi");ss.add(40.50);
 		Iterator ii = ss.iterator();	// iterator is method and Iterator is interface. 
-		while(ii.hasNext()) {
-			Object obj = ii.next();
+		while(ii.hasNext()) {			// it check element present or not 
+			Object obj = ii.next();		// it retrieve that element and point to next 
 			if(obj.equals("Ravi") ) {
 				ii.remove();
 			}
 			System.out.println(obj);
 		}
 		System.out.println(ss);
-		Map mm = new HashMap<>();
+		Map mm = new HashMap();
 		mm.put("A","X");
 		mm.put("B", "Y");
 		mm.put("C", "Z");
