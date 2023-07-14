@@ -11,7 +11,7 @@ public class App {
 	StudentService ss = new StudentService();
 	int choice;
 	do {
-		System.out.println("1:Add Student 2: Number of Student 3:Display Student 4: Display Student One by one");
+		System.out.println("1:Add Student 2: Number of Student 3:Display Student 4: Display Student One by one 5 : Key and Value separate display");
 		System.out.println("Plz enter your choice");
 		choice = sc.nextInt();
 		switch (choice) {
@@ -24,6 +24,8 @@ public class App {
 		       break;
 		case 4:ss.displayStudentOneByOne();
 		       break;
+		case 5 :ss.getOnlyKeys();
+			    break;
 		default:System.out.println("Wrong choice");
 		 	   break;
 		}
