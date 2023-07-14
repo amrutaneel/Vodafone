@@ -45,13 +45,18 @@ public class ArraysDemo {
 	
 	}
 
-	String names[]= {"Vijay","Ajay","Ramesh","Leela","Neena"};
+	String names[]= {"Vijay","Ajay","Ramesh","Leela","Neena","Akash"};
 	Arrays.sort(names);
-	if(Arrays.binarySearch(names, "Neena")<0) {
+	if(Arrays.binarySearch(names, "Akash")<0) {
 		System.out.println("Not present");
 	}else {
 		System.out.println("present");
 	}
+	String name1="Akash";
+	String name2 ="Akkash";
+	System.out.println(name1.compareTo(name2));
+	System.out.println(name1.codePointAt(2));
+	System.out.println(name2.codePointAt(2));
 	}
 
 }
