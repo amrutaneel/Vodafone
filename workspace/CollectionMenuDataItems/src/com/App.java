@@ -27,6 +27,8 @@ public class App {
 		con = sc.next();
 	} while (con.equalsIgnoreCase("y"));
 	
+	ss.close();
+	sc.close();
 	System.out.println("Finish Visit Again!");
 	
 	}
