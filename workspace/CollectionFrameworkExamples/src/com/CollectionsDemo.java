@@ -25,24 +25,40 @@ public class CollectionsDemo {
 //	for(int n:ll) {
 //		System.out.print(n+" ");
 //	}
-	List<String> names = new ArrayList<String>();
-	names.add("Lex"); names.add("Akash"); names.add("Vijay"); names.add("Ramesh");
-	System.out.println("Before sort string from list");
-	for(String name:names) {
-		System.out.print(name+" ");
-	}
-	Collections.sort(names);
-	System.out.println();
-	System.out.println("After sort string from list Asc ");
-	for(String name:names) {
-		System.out.print(name+" ");
-	}
-	Collections.reverse(names);
-	System.out.println();
-	System.out.println("After sort string from list Desc");
-	for(String name:names) {
-		System.out.print(name+" ");
-	}
+//	String fname="akash";
+//	System.out.println(fname);
+//	fname = fname.toLowerCase();
+//	System.out.println(fname);
+	
+	
+	
+//	List<String> names = new ArrayList<String>();
+//	names.add("Lex"); names.add("Akash"); names.add("Vijay"); names.add("Ramesh");
+//	System.out.println("Before sort string from list");
+//	for(String name:names) {
+//		System.out.print(name+" ");
+//	}
+//	Collections.sort(names);
+//	System.out.println();
+//	System.out.println("After sort string from list Asc ");
+//	for(String name:names) {
+//		System.out.print(name+" ");
+//	}
+//	Collections.reverse(names);
+//	System.out.println();
+//	System.out.println("After sort string from list Desc");
+//	for(String name:names) {
+//		System.out.print(name+" ");
+//	}
+	String fname = "akash";		// fname is akash
+	System.out.println(fname);
+	System.out.println(fname.toUpperCase());
+	char firstCharacter = fname.charAt(0);    // 0 position character a in lower case 
+	System.out.println(firstCharacter);
+	String fullname = String.valueOf(firstCharacter).toUpperCase().concat(fname.substring(1));
+	System.out.println(fullname);
 	}
 
 }
+
+
