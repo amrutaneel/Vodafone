@@ -32,6 +32,7 @@ public class CollectionWithGenerics {
 	//ll.add("Ravi");
 	Map<Integer, String> mm = new HashMap<Integer,String>();
 	mm.put(1, "Ravi");
+	System.out.println(mm.get(1));
 	int n = ll.get(0);  // auto-unboxing : converting object to primitive 
 	System.out.println(n);
 	

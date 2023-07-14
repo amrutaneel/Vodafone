@@ -1,4 +1,4 @@
-package com;
+cpackage com;
 
 public class DemoTest {
 
