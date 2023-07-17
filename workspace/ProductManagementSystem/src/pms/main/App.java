@@ -15,6 +15,24 @@ public class App {
 	String con;
 	int choice;
 	String result;
+	
+	do {
+		System.out.println("1:Add Product 2:Number Of Product");
+		System.out.println("Plz enter your choice");
+		choice = sc.nextInt();
+		switch(choice) {
+		case 1:System.out.println("Add Product");
+		       break;
+		case 2:System.out.println("Number of product");
+		       break;
+		 default:System.out.println("Wrong choice");
+		       break;
+		}
+		System.out.println("do you want to continue?");
+		con = sc.next();
+	} while (con.equalsIgnoreCase("y"));
+	System.out.println("Thank you!");
+	
 	}
 
 }
