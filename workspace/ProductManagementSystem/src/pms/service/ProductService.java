@@ -19,7 +19,7 @@ public String storeProduct(Product product) {
 		Iterator<Product> li = listOfProducts.iterator();
 		while(li.hasNext()) {
 			Product p = li.next();
-			if(p.getPid()==product.getPid()) {
+			if(p.getPid()==product.getPid() ) {
 				flag++;
 				break;
 			}

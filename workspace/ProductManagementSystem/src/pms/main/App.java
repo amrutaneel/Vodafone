@@ -24,9 +24,8 @@ public class App {
 		switch(choice) {
 		case 1:System.out.println("Add Product");
 		       System.out.println("Enter the product id");
-		       pid = sc.nextInt();
-		       // we need to call another busienss method to check pid present or not 
-		       //if not then take name and price. 
+		       pid = sc.nextInt(); // we need to call another busienss method to check pid present or not 
+		       						//if not then take name and price. 
 		       System.out.println("Enter the product name");
 		       pname = sc.next();
 		       System.out.println("Enter the product price");
