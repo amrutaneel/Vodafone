@@ -47,7 +47,7 @@ public void setPrice(float price) {
 }
 @Override
 public String toString() {
-	return "Product [pid=" + pid + ", pname=" + pname + ", price=" + price + "]";
+	return "Product [pid=" + pid + ", pname=" + pname + ", price=" + price + "]"+super.toString();
 }
 
 
