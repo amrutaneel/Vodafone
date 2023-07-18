@@ -1,5 +1,6 @@
 package pms.service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -10,7 +11,11 @@ import pms.exception.ProductPriceException;
 public class ProductService {
 
 private List<Product> listOfProducts = new ArrayList<Product>();
-
+// this is init or intialization block it will execute when we create ProductService class object. 
+{
+	System.out.println(LocalDateTime.now());
+	listOfProducts.add(new Product(1, "TV", 56000));
+}
 public String storeProduct(Product product) {
 	int flag=0;
 	try {
