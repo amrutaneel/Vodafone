@@ -10,7 +10,7 @@ public class App {
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	ProductService ps =new ProductService();
-	int pid;
+	int pid;			/*	hold pid id for temporary purpose	*/
 	String pname;
 	float price;
 	String con;
