@@ -52,4 +52,45 @@ public int numberOfProduct() {
 	return listOfProducts.size();
 }
 
+	public String deleteProduct(int pid) {
+		//int flag =0;
+		Iterator<Product> li = listOfProducts.iterator();
+		while(li.hasNext()) {
+			Product p = li.next();
+			if(p.getPid()==pid) {
+				//listOfProducts.remove(p);
+				li.remove();
+				return "Deleted successfully";
+				//flag++;
+				//break;
+			}
+		}
+		return "Record not present";
+//		if(flag==0) {
+//			return "Product not present";
+//		}else {
+//			return "Product deleted successfully";
+//		}
+	}
+	public String updateProduct(Product product) {		// pid and new price 
+		int flag =0;
+		Iterator<Product> li = listOfProducts.iterator();
+		while(li.hasNext()) {
+			Product p = li.next();
+			if(p.getPid()==product.getPid()) {
+				p.setPrice(product.getPrice());  // replace old price by new price 
+				flag++;
+				break;
+			}
+		}
+		if(flag==0) {
+			return "Product not present";
+		}else {
+			return "Product price updated successfully";
+		}
+	}
+	
+	public List<Product>  displayAllProduct() {
+		return listOfProducts;
+	}
 }
