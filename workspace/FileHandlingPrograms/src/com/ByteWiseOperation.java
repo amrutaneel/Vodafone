@@ -1,6 +1,7 @@
 package com;
 
 import java.io.DataInputStream;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
@@ -18,21 +19,36 @@ public class ByteWiseOperation {
 	
 	// source : keyboard 
 	// destination : file 
-		DataInputStream dis = new DataInputStream(System.in);
-		//FileOutputStream fos = new FileOutputStream("abc.txt");  // override the value current path
-		//FileOutputStream fos = new FileOutputStream("D:\\abc.txt");// override the value custom path 
-		FileOutputStream fos = new FileOutputStream("abc.txt",true);  // append the value 
-		System.out.println("Plz enter the data");
+//		DataInputStream dis = new DataInputStream(System.in);
+//		//FileOutputStream fos = new FileOutputStream("abc.txt");  // override the value current path
+//		//FileOutputStream fos = new FileOutputStream("D:\\abc.txt");// override the value custom path 
+//		FileOutputStream fos = new FileOutputStream("abc.txt",true);  // append the value 
+//		System.out.println("Plz enter the data");
+//		int ch;
+//		while( (ch = dis.read()) != '\n') {		// when we hit enter key it will stop reading data. 
+//			System.out.println(ch+"="+(char)ch);
+//			fos.write(ch);	// in file automatically convert it
+//		}
+//		fos.write('\n');// next line in file after stored all data. 
+//		fos.close();
+//		System.out.println("Data stored in file");
+		// source : file  
+		// destination : file / console 
+		//FileInputStream fis = new FileInputStream("abc.txt");
+		FileInputStream fis = new FileInputStream("D:\\JPA Crud Operation\\JPATest\\src\\main\\java\\com\\bean\\Product.java");
+		FileOutputStream fos = new FileOutputStream("demo.txt");
 		int ch;
-		while( (ch = dis.read()) != '@') {
-			System.out.println(ch+"="+(char)ch);
-			fos.write(ch);	// in file automatically convert it
+		while((ch=fis.read()) != -1) {  // EOF is equal to -1 
+			fos.write(ch);
 		}
+		fis.close();
 		fos.close();
-		System.out.println("Data stored in file");
+		System.out.println("file copied...");
 	}
 
 }
+
+
 
 
 
