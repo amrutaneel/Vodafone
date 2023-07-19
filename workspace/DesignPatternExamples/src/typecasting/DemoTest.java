@@ -4,6 +4,7 @@ public class DemoTest {
 
 	public static void main(String[] args) {
 		// int family 
+		long phonenumber = 8765678765l;
 		byte a=10;
 		short b=a;	// implicit type casting 
 		System.out.println("a "+a);
