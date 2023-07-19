@@ -1,6 +1,9 @@
 package prototype;
 class Employee implements Cloneable{
 	double salary;
+	public Employee() {
+	System.out.println("object created...");
+	}
 	public void display() {
 		System.out.println("Salary is "+salary);
 	}
@@ -24,12 +27,12 @@ public class DemoTest {
 	emp2.salary=14000;
 		emp3.salary=16000;
 	emp1.display();	// 16000
-	emp2.display(); // 14000
+		emp2.display(); // 14000
 	emp3.display(); // 16000
 	Employee emp4 = emp2.getClone();   // we created clone of emp4 object 
 	System.out.println("after created clone");
-	emp4.display();
-	emp2.display();
+	emp4.display();	// 14000
+	emp2.display();	// 14000 
 	emp2.salary=18000; // after done changes on emp2 emp4 will doesn't effect and vice-versa
 	emp2.display();
 	emp4.display();
