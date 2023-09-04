@@ -5,11 +5,12 @@ public class EmployeeTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-	Employee emp1 = new Employee();
+	Employee emp1 = new Employee();		// object creation 
 	Employee emp2 = new Employee();
 	Employee emp3 = new Employee();
 	Employee emp4  =new Employee();
-	Employee emp5 = new Employee(104, "Mahesh", 20000);
+		Employee emp5 = new Employee(104, "Mahesh", 20000);
+		//emp1.salary=-12000;
 	
 //	emp1.id=100;			// we can't set value for variable because variable are private 
 //	emp1.name="lex";

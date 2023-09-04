@@ -35,6 +35,7 @@ public class ByteWiseOperation {
 		// source : file  
 		// destination : file / console 
 		//FileInputStream fis = new FileInputStream("abc.txt");
+		
 		FileInputStream fis = new FileInputStream("D:\\JPA Crud Operation\\JPATest\\src\\main\\java\\com\\bean\\Product.java");
 		FileOutputStream fos = new FileOutputStream("demo.txt");
 		int ch;
