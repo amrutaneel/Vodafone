@@ -20,11 +20,7 @@ public class MainMenu {
 			System.out.println("Plz enter your choice");
 			int choice = sc.nextInt();
 			switch (choice) {
-			case 1:String listOfFiles[] = rootPath.list();
-						Arrays.sort(listOfFiles);
-						for(String name:listOfFiles) {
-							System.out.println(name);
-						}				
+			case 1:System.out.println("all files");			
 				break;
 			case 2:SubMenu.subMenuOptions();
 					break;
